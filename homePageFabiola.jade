@@ -1,0 +1,37 @@
+doctype html
+html(ng-app='rutasApp')(ng-controller='myControllerCtrl')
+  head
+    title Restaurants Arequipa
+    link(rel='icon',href='/img/bandera.png')
+    //- link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.min.css') 
+    link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.min.css')  
+    link(rel='stylesheet', href='/stylesheets/style02.css')  
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    //- link(rel='stylesheet', href='/bootstrap/css/cyborg.bootstrap.min.css')
+    //- link(rel='stylesheet', href='/bootstrap/css/slate.bootstrap.min.css')
+    //- link(rel='stylesheet', href='/bootstrap/css/superhero.bootstrap.min.css')
+  
+  body.fondoColor
+    .titleColor
+      a.navbar-brand.letraTitulo(href='#', title='contact: fabiolaherrerarivera@gmail.com') Restaurants Calle Mercaderes - Arequipa
+    .contentDiv
+        #map(ng-init="cargarRestaurant()")
+
+    script(src="/javascripts/jquery-3.2.1.min.js")  
+    //- script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/esm/popper.min.js")  
+    script(src="/bootstrap/js/bootstrap.min.js")  
+    script(src='/angular/angular.min.js')
+    script(src='/lib/angular-route.min.js')  
+
+    script(src='/angular/rutasApp.js')
+    //- script(src='/angular/rutasAppp.min.js')
+    //- script(src='/app.js')
+    //- script(src='/home/homeFabiola.controller.js')
+    //- script(src='/home/home.controller.js')
+    //- script(src='/common/services/rutasData.service.js')
+    //- script(src='/common/constants/constants.js')
+    //- script(src='//maps.googleapis.com/maps/api/js?sensor=false')  
+    //- script(async="", defer="", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN8GrgTG5THZekESkcBGuAnusQJVMSMtM")
+    script(id="scriptGoogle" ,src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJoWpw9OqgPNbbud1AY6ZbSaOvKPPnSLk")
+    
+    
